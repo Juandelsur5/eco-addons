@@ -1,0 +1,28 @@
+  GNU nano 8.7                                                                   eco_core/views/eco_core_menus.xml
+<odoo>
+    <menuitem id="menu_root" name="ECO" sequence="10"/>
+
+    <menuitem id="menu_slot_01" name="Slot 01" parent="eco_core.menu_root" sequence="101"/>
+    <menuitem id="menu_slot_02" name="Slot 02" parent="eco_core.menu_root" sequence="102"/>
+    <menuitem id="menu_slot_03" name="Slot 03" parent="eco_core.menu_root" sequence="103"/>
+    <menuitem id="menu_slot_04" name="Slot 04" parent="eco_core.menu_root" sequence="104"/>
+    <menuitem id="menu_slot_05" name="Slot 05" parent="eco_core.menu_root" sequence="105"/>
+
+    <menuitem id="menu_slot_06" name="Slot 06" parent="eco_core.menu_root" sequence="106"/>
+    <menuitem id="menu_slot_07" name="Slot 07" parent="eco_core.menu_root" sequence="107"/>
+    <menuitem id="menu_slot_08" name="Slot 08" parent="eco_core.menu_root" sequence="108"/>
+    <menuitem id="menu_slot_09" name="Slot 09" parent="eco_core.menu_root" sequence="109"/>
+    <menuitem id="menu_slot_10" name="Slot 10" parent="eco_core.menu_root" sequence="110"/>
+
+    <menuitem id="menu_slot_11" name="Slot 11" parent="eco_core.menu_root" sequence="111"/>
+    <menuitem id="menu_slot_12" name="Slot 12" parent="eco_core.menu_root" sequence="112"/>
+    <menuitem id="menu_slot_13" name="Slot 13" parent="eco_core.menu_root" sequence="113"/>
+    <menuitem id="menu_slot_14" name="Slot 14" parent="eco_core.menu_root" sequence="114"/>
+    <menuitem id="menu_slot_15" name="Slot 15" parent="eco_core.menu_root" sequence="115"/>
+
+    <menuitem id="menu_slot_16" name="Slot 16" parent="eco_core.menu_root" sequence="116"/>
+    <menuitem id="menu_slot_17" name="Slot 17" parent="eco_core.menu_root" sequence="117"/>
+    <menuitem id="menu_slot_18" name="Slot 18" parent="eco_core.menu_root" sequence="118"/>
+    <menuitem id="menu_slot_19" name="Slot 19" parent="eco_core.menu_root" sequence="119"/>
+    <menuitem id=
+
