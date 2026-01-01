@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_partner_form_ubicacion_operativa" model="ir.ui.view">
-        <field name="name">res.partner.form.ubicacion.operativa</field>
+    <record id="view_partner_form_eco_type_and_location" model="ir.ui.view">
+        <field name="name">res.partner.form.eco.type.location</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
 
-            <!-- Campo requerido por Odoo 17 para expresiones invisible -->
-            <xpath expr="//form" position="inside">
-                <field name="customer_rank" invisible="1"/>
+            <!-- ECO: Tipo de Persona (definición de negocio) -->
+            <xpath expr="//sheet" position="inside">
+                <group>
+                    <field name="eco_partner_type" required="1"/>
+                </group>
             </xpath>
 
+            <!-- Campo requerido para expresiones invisible en Odoo 17 -->
+            <xpath expr="//notebook" position="before">
+                <field name="eco_partner_type" invisible="1"/>
+            </xpath>
+
+            <!-- ECO: Ubicación Operativa (solo Cliente ECO) -->
             <xpath expr="//notebook" position="inside">
                 <page string="Ubicación Operativa"
-                      invisible="customer_rank == 0">
+                      invisible="eco_partner_type != 'client'">
                     <group>
                         <group>
                             <field name="x_neighborhood"

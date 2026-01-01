@@ -1,29 +1,36 @@
 from odoo import models, fields
 
-
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
+    # === ECO: Tipo de Persona (definición de negocio) ===
+    eco_partner_type = fields.Selection(
+        [
+            ('client', 'Cliente'),
+            ('supplier', 'Proveedor'),
+        ],
+        string='Tipo de Persona',
+        required=True,
+        default='client'
+    )
+
+    # === ECO: Ubicación Operativa ===
     x_neighborhood = fields.Char(
-        string="Vereda/Barrio",
-        help="Vereda rural o barrio urbano del cliente para operación en campo"
+        string="Barrio / Vereda"
     )
 
     x_location_notes = fields.Text(
-        string="Observaciones de ubicación",
-        help="Referencias adicionales para direcciones difíciles (ej. portón azul, vía destapada, casa tercera)"
+        string="Observaciones de ubicación"
     )
 
     x_latitude = fields.Float(
         string="Latitud GPS",
-        digits=(10, 6),
-        help="Latitud GPS del cliente"
+        digits=(10, 6)
     )
 
     x_longitude = fields.Float(
         string="Longitud GPS",
-        digits=(10, 6),
-        help="Longitud GPS del cliente"
+        digits=(10, 6)
     )
 
     x_geo_source = fields.Selection(
@@ -37,6 +44,5 @@ class ResPartner(models.Model):
     )
 
     x_geo_accuracy = fields.Integer(
-        string="Precisión GPS (m)",
-        help="Precisión del GPS en metros"
+        string="Precisión GPS (m)"
     )
