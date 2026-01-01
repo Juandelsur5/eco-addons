@@ -1,16 +1,13 @@
 {
-    "name": "ECO - Módulo Técnico",
+    "name": "ECO Core Container",
     "version": "17.0.1.0.0",
-    "summary": "Gobierno técnico, integraciones y permisos delicados",
-    "category": "ECO/Technical",
+    "summary": "Contenedor estructural y gobierno de slots ECO",
+    "category": "ECO/Core",
     "author": "ECO",
     "depends": ["base"],
     "data": [
-        "security/eco_tecnico_groups.xml",
-        "security/ir.model.access.csv",
-        "views/eco_tecnico_menu.xml",
-        "views/eco_tecnico_integration_views.xml",
+        "views/eco_core_menus.xml",
     ],
     "installable": True,
-    "application": False,
+    "application": True,
 }
