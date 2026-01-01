@@ -5,6 +5,12 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
+
+            <!-- Campo requerido por Odoo 17 para expresiones invisible -->
+            <xpath expr="//form" position="inside">
+                <field name="customer_rank" invisible="1"/>
+            </xpath>
+
             <xpath expr="//notebook" position="inside">
                 <page string="Ubicación Operativa"
                       invisible="customer_rank == 0">
@@ -24,6 +30,7 @@
                     </group>
                 </page>
             </xpath>
+
         </field>
     </record>
 </odoo>
