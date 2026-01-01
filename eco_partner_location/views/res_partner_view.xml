@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_ubicacion_operativa" model="ir.ui.view">
+        <field name="name">res.partner.form.ubicacion.operativa</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="contacts.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Ubicación Operativa"
+                      attrs="{'invisible':[('customer_rank','=',0)]}">
+                    <group>
+                        <group>
+                            <field name="x_neighborhood"
+                                   placeholder="Ej: Barrio Centro, Vereda La Esperanza"/>
+                            <field name="x_location_notes"
+                                   placeholder="Ej: Portón azul, casa tercera, vía destapada"/>
+                        </group>
+                        <group string="Coordenadas GPS">
+                            <field name="x_latitude"/>
+                            <field name="x_longitude"/>
+                            <field name="x_geo_source"/>
+                            <field name="x_geo_accuracy"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
+
