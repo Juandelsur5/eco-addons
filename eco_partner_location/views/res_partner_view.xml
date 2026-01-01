@@ -3,7 +3,7 @@
     <record id="view_partner_form_ubicacion_operativa" model="ir.ui.view">
         <field name="name">res.partner.form.ubicacion.operativa</field>
         <field name="model">res.partner</field>
-        <field name="inherit_id" ref="contacts.view_partner_form"/>
+        <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <xpath expr="//notebook" position="inside">
                 <page string="Ubicación Operativa"
@@ -27,4 +27,3 @@
         </field>
     </record>
 </odoo>
-
