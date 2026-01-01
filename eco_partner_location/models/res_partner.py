@@ -51,7 +51,6 @@ class ResPartner(models.Model):
         string="Precisión GPS (m)"
     )
 
-
     # === ECO: Campos RAW (WhatsApp) ===
     x_latitude_raw = fields.Char(string="Latitud (WhatsApp)")
     x_longitude_raw = fields.Char(string="Longitud (WhatsApp)")
