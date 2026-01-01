@@ -1,4 +1,3 @@
-  GNU nano 8.7                                                                   eco_core/views/eco_core_menus.xml
 <odoo>
     <menuitem id="menu_root" name="ECO" sequence="10"/>
 
@@ -24,5 +23,5 @@
     <menuitem id="menu_slot_17" name="Slot 17" parent="eco_core.menu_root" sequence="117"/>
     <menuitem id="menu_slot_18" name="Slot 18" parent="eco_core.menu_root" sequence="118"/>
     <menuitem id="menu_slot_19" name="Slot 19" parent="eco_core.menu_root" sequence="119"/>
-    <menuitem id=
-
+    <menuitem id="menu_slot_20" name="Slot 20" parent="eco_core.menu_root" sequence="120"/>
+</odoo>
