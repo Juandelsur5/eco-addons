@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//notebook" position="inside">
                 <page string="Ubicación Operativa"
-                      attrs="{'invisible':[('customer_rank','=',0)]}">
+                      invisible="customer_rank == 0">
                     <group>
                         <group>
                             <field name="x_neighborhood"
